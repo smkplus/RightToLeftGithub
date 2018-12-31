@@ -25,6 +25,19 @@ namespace RightToLeftGithub
 
         private void Convert_Click(object sender, EventArgs e)
         {
+
+            Output.Text = FixText();
+            Output.Text = HyperLinks();
+            if(Output.Text != "")
+            {
+            Clipboard.SetText(Output.Text);
+            MessageBox.Show("Text Converted And Copied");
+            webBrowser1.DocumentText = Output.Text;
+            }
+        }
+
+        string FixText()
+        {
             string pattern = @"(.+)";
             string substitution = "";
             var Type = TypeBox.SelectedItem.ToString();
@@ -60,14 +73,21 @@ namespace RightToLeftGithub
             {
                 substitution = @"<div dir=""rtl""> <h5> $0 </h5> </div> ";
             }
-            if(substitution != "")
-            {
-
             Regex regex = new Regex(pattern);
-            Output.Text = regex.Replace(Input.Text, substitution);
-            Clipboard.SetText(Output.Text);
-            MessageBox.Show("Text Converted And Copied");
-            }
+            string result = regex.Replace(Input.Text, substitution);
+            return result;
+        }
+
+        string HyperLinks()
+        {
+            string pattern = @"\[(.*?)\]\((https.*|www.*)\)";
+            string substitution = @"<a href=""$0"">$1</a>";
+
+            RegexOptions options = RegexOptions.Multiline;
+
+            Regex regex = new Regex(pattern, options);
+            string result = regex.Replace(Input.Text, substitution);
+            return result;
         }
 
         private void Form1_Load(object sender, EventArgs e)
