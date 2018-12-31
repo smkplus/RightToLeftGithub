@@ -1,0 +1,10 @@
+C:\Users\Smkgames\source\repos\RightToLeftGithub\RightToLeftGithub\obj\Debug\RightToLeftGithub.csprojResolveAssemblyReference.cache
+C:\Users\Smkgames\source\repos\RightToLeftGithub\RightToLeftGithub\obj\Debug\RightToLeftGithub.Properties.Resources.resources
+C:\Users\Smkgames\source\repos\RightToLeftGithub\RightToLeftGithub\obj\Debug\RightToLeftGithub.csproj.GenerateResource.Cache
+C:\Users\Smkgames\source\repos\RightToLeftGithub\RightToLeftGithub\obj\Debug\RightToLeftGithub.csproj.CoreCompileInputs.cache
+C:\Users\Smkgames\source\repos\RightToLeftGithub\RightToLeftGithub\bin\Debug\RightToLeftGithub.exe.config
+C:\Users\Smkgames\source\repos\RightToLeftGithub\RightToLeftGithub\bin\Debug\RightToLeftGithub.exe
+C:\Users\Smkgames\source\repos\RightToLeftGithub\RightToLeftGithub\bin\Debug\RightToLeftGithub.pdb
+C:\Users\Smkgames\source\repos\RightToLeftGithub\RightToLeftGithub\obj\Debug\RightToLeftGithub.Form1.resources
+C:\Users\Smkgames\source\repos\RightToLeftGithub\RightToLeftGithub\obj\Debug\RightToLeftGithub.exe
+C:\Users\Smkgames\source\repos\RightToLeftGithub\RightToLeftGithub\obj\Debug\RightToLeftGithub.pdb
